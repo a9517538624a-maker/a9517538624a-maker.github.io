@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d1b">
+<title>川雲娛樂｜CHUAN YUN</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#080d1b;color:#f1f3fa;
+ font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;
+ padding-bottom:85px;
+}
+header{
+ position:sticky;top:0;z-index:10;
+ background:rgba(5,9,19,.94);backdrop-filter:blur(16px);
+ border-bottom:1px solid #26334e;
+ padding:17px 20px;
+ display:flex;align-items:center;justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+ width:52px;height:52px;border-radius:15px;
+ background:linear-gradient(135deg,#fff,#a9b5ce);
+ color:#101729;display:grid;place-items:center;
+ font-size:29px;font-weight:900;
+ box-shadow:0 0 25px #8196c555;
+}
+.brand-name{font-size:23px;font-weight:900;letter-spacing:3px}
+.brand-en{font-size:10px;letter-spacing:5px;color:#8795b2;margin-top:3px}
+header a{
+ color:white;text-decoration:none;border:1px solid #53617a;
+ border-radius:13px;padding:12px;font-size:13px;
+}
+main{max-width:850px;margin:auto;padding:0 20px}
+.hero{
+ padding:80px 0 35px;
+ background:radial-gradient(ellipse at 85% 20%,#233b6b66,transparent 60%);
+}
+.eyebrow{color:#9aa9c4;letter-spacing:5px;font-size:12px}
+h1{font-size:clamp(35px,8vw,64px);line-height:1.3;margin:28px 0 15px;font-weight:900}
+.hero p{font-size:17px;line-height:1.9;color:#aab5cb}
+.actions{display:flex;gap:12px;margin-top:28px}
+.btn{
+ flex:1;text-align:center;text-decoration:none;padding:17px 8px;
+ border-radius:17px;font-weight:800;
+}
+.primary{background:linear-gradient(120deg,#fff,#aab8d0);color:#101729}
+.secondary{border:1px solid #56647e;color:white}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 45px}
+.stat,.panel,.price-card{
+ background:linear-gradient(145deg,#111c32,#0b1222);
+ border:1px solid #303c56;border-radius:20px;padding:19px;
+}
+.stat strong{display:block;font-size:25px}
+.stat span{color:#8290ab;font-size:12px}
+section{padding:25px 0 35px;scroll-margin-top:85px}
+.section-label{font-size:11px;letter-spacing:4px;color:#8798b9}
+h2{font-size:27px;margin:10px 0 22px}
+.price-card{margin-bottom:13px}
+.price-title{font-weight:800;font-size:17px}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}
+.price{font-size:25px;font-weight:900;color:#f4f6ff}
+.unit{color:#93a1ba;font-size:12px}
+.tag{
+ display:inline-block;background:#183b35;color:#8ce0b7;
+ border-radius:30px;padding:6px 12px;font-size:11px;
+}
+.waiting{
+ display:flex;align-items:center;justify-content:space-between;
+ background:linear-gradient(120deg,#192846,#10182b);
+ border:1px solid #455778;border-radius:20px;padding:23px;
+}
+.waiting strong{font-size:34px}
+.waiting small{color:#9ba9c2}
+.service-note{color:#9ba9c2;line-height:1.8;font-size:14px}
+.contact{
+ text-align:center;padding:28px 20px;
+ background:linear-gradient(145deg,#172744,#0d1527);
+ border:1px solid #425371;border-radius:22px;
+}
+.contact p{color:#aab5cb;line-height:1.8}
+.contact a{
+ display:inline-block;margin-top:12px;background:#dce5f5;
+ color:#101729;text-decoration:none;padding:14px 25px;
+ border-radius:13px;font-weight:900;
+}
+footer{text-align:center;color:#667590;font-size:11px;padding:30px 10px}
+nav{
+ position:fixed;bottom:0;left:0;right:0;z-index:20;
+ background:rgba(5,8,16,.96);backdrop-filter:blur(15px);
+ border-top:1px solid #28334a;
+ display:flex;justify-content:space-around;padding:10px 5px 15px;
+}
+nav a{color:#8793ab;text-decoration:none;text-align:center;font-size:11px;flex:1}
+nav a span{display:block;font-size:22px;margin-bottom:3px}
+nav a:active{color:white}
+@media(max-width:420px){
+ .brand-name{font-size:20px}
+ .actions{gap:8px}
+ .btn{font-size:13px}
+ .stats{gap:8px}
+ .stat{padding:13px}
+ .stat strong{font-size:21px}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="brand">
+  <div class="logo">川</div>
+  <div>
+   <div class="brand-name">川雲娛樂</div>
+   <div class="brand-en">CHUAN YUN</div>
+  </div>
+ </div>
+ <a href="#contact">聯絡客服</a>
+</header>
+
+<main>
+ <div class="hero" id="home">
+  <div class="eyebrow">DELTA FORCE · GAME SERVICES</div>
+  <h1>三角洲代肝<br>遊戲幣・專業服務</h1>
+  <p>每日更新遊戲幣報價、代肝價格與等待人數。接受預訂，提供專業服務。</p>
+  <div class="actions">
+   <a class="btn primary" href="#services">查看服務方案</a>
+   <a class="btn secondary" href="#prices">今日價格</a>
+  </div>
+ </div>
+
+ <div class="stats">
+  <div class="stat"><strong>04</strong><span>服務分類</span></div>
+  <div class="stat"><strong>每日</strong><span>更新報價</span></div>
+  <div class="stat"><strong>即時</strong><span>等待資訊</span></div>
+ </div>
+
+ <section id="prices">
+  <div class="section-label">TODAY'S PRICE</div>
+  <h2>今日遊戲幣報價</h2>
+  <div class="price-card">
+   <div class="price-title">100M 單隻</div>
+   <div class="price-row">
+    <span class="unit">新台幣 TWD / 100M</span>
+    <span class="price">NT$150</span>
+   </div>
+  </div>
+  <div class="price-card">
+   <div class="price-title">10 隻方案</div>
+   <div class="price-row">
+    <span class="unit">每隻 100M</span>
+    <span class="price">NT$130</span>
+   </div>
+  </div>
+  <div class="price-card">
+   <div class="price-title">50 隻方案</div>
+   <div class="price-row">
+    <span class="unit">每隻 100M</span>
+    <span class="price">NT$120</span>
+   </div>
+  </div>
+  <p><span class="tag">● 接受預訂</span></p>
+ </section>
+
+ <section id="services">
+  <div class="section-label">BOOST SERVICES</div>
+  <h2>代肝服務價格</h2>
+  <div class="price-card">
+   <div class="price-title">純子彈手戳</div>
+   <div class="price-row">
+    <span class="unit">每 100M · 新台幣</span>
+    <span class="price">NT$600</span>
+   </div>
+  </div>
+  <p class="service-note">服務內容及安排請聯絡官方客服確認。</p>
+ </section>
+
+ <section id="waiting">
+  <div class="section-label">CURRENT QUEUE</div>
+  <h2>代肝等待狀態</h2>
+  <div class="waiting">
+   <div>
+    <strong>0 人</strong><br>
+    <small>目前等待中人數</small>
+   </div>
+   <span class="tag">等待資訊</span>
+  </div>
+  <p class="service-note">目前顯示 0 人為初始預設值，實際人數以客服確認為準。</p>
+ </section>
+
+ <section id="contact">
+  <div class="contact">
+   <div class="section-label">CONTACT US</div>
+   <h2>聯絡川雲娛樂</h2>
+   <p>有任何價格、預訂或服務問題，歡迎透過官方 LINE 聯絡我們。</p>
+   <a href="#contact">官方 LINE 連結待設定</a>
+  </div>
+ </section>
+</main>
+
+<footer>© CHUAN YUN ENTERTAINMENT · 川雲娛樂</footer>
+
+<nav>
+ <a href="#home"><span>⌂</span>首頁</a>
+ <a href="#services"><span>⚡</span>服務</a>
+ <a href="#prices"><span>＄</span>價格</a>
+ <a href="#waiting"><span>▣</span>等待</a>
+ <a href="#contact"><span>⌕</span>聯絡</a>
+</nav>
+
+</body>
+</html>
