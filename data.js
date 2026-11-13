@@ -15,5 +15,5 @@ window.SITE_DATA = {
 
   waitingCount: 5,
   preorder: true,
-  lineUrl: ""
+  lineUrl: "https://line.me/R/ti/p/@348iqzie"
 };
