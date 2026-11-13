@@ -212,4 +212,48 @@ nav a:active{color:white}
 </nav>
 
 </body>
+<script src="data.js"></script>
+<script>
+const d = window.SITE_DATA;
+
+if (d) {
+  // 更新遊戲幣價格
+  const cards = document.querySelectorAll(
+    "#prices .price-card"
+  );
+
+  d.coinPrices.forEach((item, i) => {
+    if (cards[i]) {
+      cards[i].querySelector(".price-title").textContent = item.name;
+      cards[i].querySelector(".price").textContent =
+        "NT$" + item.price;
+    }
+  });
+
+  // 更新代肝價格
+  const boost = document.querySelector(
+    "#services .price-card"
+  );
+
+  if (boost && d.boostServices[0]) {
+    boost.querySelector(".price-title").textContent =
+      d.boostServices[0].name;
+
+    boost.querySelector(".price").textContent =
+      "NT$" + d.boostServices[0].price;
+  }
+
+  // 更新等待人數
+  const waiting = document.querySelector(
+    "#waiting .waiting strong"
+  );
+
+  if (waiting) {
+    waiting.textContent = d.waitingCount + " 人";
+  }
+}
+</script>
+</body>
+</html>
+
 </html>
