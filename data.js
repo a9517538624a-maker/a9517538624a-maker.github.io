@@ -13,7 +13,7 @@ window.SITE_DATA = {
     { name: "純子彈手戳", unit: "100M", price: 600 }
   ],
 
-  waitingCount: 5,
+  waitingCount: 19,
   preorder: true,
   lineUrl: "https://line.me/R/ti/p/@348iqzie"
 };
