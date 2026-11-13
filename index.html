@@ -3,270 +3,268 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080d1b">
-<title>川雲娛樂｜CHUAN YUN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d18">
+<title>川雲娛樂 CHUAN YUN</title>
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- margin:0;background:#080d1b;color:#f1f3fa;
- font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;
+ margin:0;background:#090d18;color:#f4f2ee;
+ font-family:"Noto Serif TC","Songti TC","PMingLiU",serif;
  padding-bottom:85px;
 }
+a{color:inherit;text-decoration:none}
 header{
- position:sticky;top:0;z-index:10;
- background:rgba(5,9,19,.94);backdrop-filter:blur(16px);
- border-bottom:1px solid #26334e;
- padding:17px 20px;
- display:flex;align-items:center;justify-content:space-between;
+ padding:20px 7%;display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #ffffff17;
 }
-.brand{display:flex;align-items:center;gap:12px}
-.logo{
- width:52px;height:52px;border-radius:15px;
- background:linear-gradient(135deg,#fff,#a9b5ce);
- color:#101729;display:grid;place-items:center;
- font-size:29px;font-weight:900;
- box-shadow:0 0 25px #8196c555;
-}
-.brand-name{font-size:23px;font-weight:900;letter-spacing:3px}
-.brand-en{font-size:10px;letter-spacing:5px;color:#8795b2;margin-top:3px}
-header a{
- color:white;text-decoration:none;border:1px solid #53617a;
- border-radius:13px;padding:12px;font-size:13px;
-}
-main{max-width:850px;margin:auto;padding:0 20px}
+.logo{font-size:25px;letter-spacing:7px;font-weight:900}
+.logo small{display:block;font-family:Arial,sans-serif;
+ font-size:9px;letter-spacing:5px;color:#8795ad;margin-top:6px}
+.header-link{font:12px Arial;letter-spacing:2px;color:#c4cbd7}
+main{max-width:1050px;margin:auto;padding:0 25px}
 .hero{
- padding:80px 0 35px;
- background:radial-gradient(ellipse at 85% 20%,#233b6b66,transparent 60%);
+ min-height:590px;position:relative;overflow:hidden;
+ display:flex;flex-direction:column;justify-content:center;
+ padding:90px 0;
 }
-.eyebrow{color:#9aa9c4;letter-spacing:5px;font-size:12px}
-h1{font-size:clamp(35px,8vw,64px);line-height:1.3;margin:28px 0 15px;font-weight:900}
-.hero p{font-size:17px;line-height:1.9;color:#aab5cb}
-.actions{display:flex;gap:12px;margin-top:28px}
+.hero:before{
+ content:"";position:absolute;width:500px;height:500px;
+ right:-120px;top:10px;border-radius:50%;
+ background:radial-gradient(ellipse,#657da755 0%,#263b6033 38%,transparent 70%);
+ filter:blur(15px);
+}
+.hero:after{
+ content:"雲";position:absolute;right:4%;top:40px;
+ font-size:clamp(180px,35vw,360px);font-weight:900;
+ color:#ffffff08;transform:rotate(-15deg);pointer-events:none;
+}
+.kicker{font:10px Arial;letter-spacing:6px;color:#91a6c5}
+.hero h1{
+ position:relative;z-index:1;font-size:clamp(55px,12vw,112px);
+ letter-spacing:12px;line-height:1.2;margin:40px 0 10px;
+ font-weight:900;
+ background:linear-gradient(130deg,#fff 10%,#9ba9c0 48%,#e9e5dc 75%,#71829d);
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+ text-shadow:0 12px 40px #9caec522;
+}
+.english{font:12px Arial;letter-spacing:9px;color:#9cabc3}
+.hero-desc{color:#aab3c3;line-height:2;font-size:14px;margin-top:35px}
+.hero-buttons{display:flex;gap:13px;margin-top:28px;flex-wrap:wrap}
 .btn{
- flex:1;text-align:center;text-decoration:none;padding:17px 8px;
- border-radius:17px;font-weight:800;
+ padding:15px 23px;border:1px solid #7e8da7;
+ font:11px Arial;letter-spacing:2px;display:inline-block;
+ transition:.3s;
 }
-.primary{background:linear-gradient(120deg,#fff,#aab8d0);color:#101729}
-.secondary{border:1px solid #56647e;color:white}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 45px}
-.stat,.panel,.price-card{
- background:linear-gradient(145deg,#111c32,#0b1222);
- border:1px solid #303c56;border-radius:20px;padding:19px;
+.btn.light{background:#e5e8ed;color:#101522;border-color:#e5e8ed}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px #7189b633}
+.art-line{
+ height:1px;background:linear-gradient(90deg,#d5deee77,transparent);
+ margin:20px 0 45px;
 }
-.stat strong{display:block;font-size:25px}
-.stat span{color:#8290ab;font-size:12px}
-section{padding:25px 0 35px;scroll-margin-top:85px}
-.section-label{font-size:11px;letter-spacing:4px;color:#8798b9}
-h2{font-size:27px;margin:10px 0 22px}
-.price-card{margin-bottom:13px}
-.price-title{font-weight:800;font-size:17px}
-.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}
-.price{font-size:25px;font-weight:900;color:#f4f6ff}
-.unit{color:#93a1ba;font-size:12px}
-.tag{
- display:inline-block;background:#183b35;color:#8ce0b7;
- border-radius:30px;padding:6px 12px;font-size:11px;
+.section{padding:45px 0 55px}
+.section-top{display:flex;justify-content:space-between;align-items:end;gap:20px}
+.label{font:10px Arial;letter-spacing:5px;color:#8fa4c3}
+h2{font-size:30px;letter-spacing:4px;font-weight:600;margin:12px 0 25px}
+.note{font-size:12px;color:#8d9ab0}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.card{
+ padding:25px 20px;background:linear-gradient(145deg,#19253a,#0d1422);
+ border:1px solid #a9b9d022;position:relative;overflow:hidden;
 }
-.waiting{
+.card:after{
+ content:"";position:absolute;width:120px;height:120px;
+ right:-60px;top:-60px;border-radius:50%;
+ background:#9eaccb18;filter:blur(10px);
+}
+.card .name{font-size:15px;color:#b9c5d8}
+.card .amount{font: bold 32px Arial;margin:28px 0 8px}
+.card .unit{font-size:11px;color:#8494ae}
+.featured{border-color:#8b9fbd77;background:linear-gradient(145deg,#263853,#111a2c)}
+.status{
+ display:inline-block;padding:7px 12px;border:1px solid #8fcab066;
+ color:#9bd8b9;font:10px Arial;letter-spacing:2px;
+}
+.boost{
  display:flex;align-items:center;justify-content:space-between;
- background:linear-gradient(120deg,#192846,#10182b);
- border:1px solid #455778;border-radius:20px;padding:23px;
+ gap:20px;padding:30px;
+ background:linear-gradient(110deg,#1b2941,#101725);
+ border:1px solid #aab9d033;
 }
-.waiting strong{font-size:34px}
-.waiting small{color:#9ba9c2}
-.service-note{color:#9ba9c2;line-height:1.8;font-size:14px}
+.boost h3{font-size:20px;font-weight:500}
+.boost-price{font:bold 36px Arial;color:#e6eaf2}
+.wait-panel{
+ display:flex;align-items:center;justify-content:space-between;
+ padding:30px;background:#111b2d;border:1px solid #8295b044;
+}
+.wait-number{font:bold 55px Arial;color:#e6eaf2}
+.wait-caption{color:#9aa9c0;font-size:12px}
 .contact{
- text-align:center;padding:28px 20px;
- background:linear-gradient(145deg,#172744,#0d1527);
- border:1px solid #425371;border-radius:22px;
+ text-align:center;padding:65px 20px;
+ border:1px solid #9baac044;
+ background:radial-gradient(ellipse at center,#273b5b66,transparent 70%);
 }
-.contact p{color:#aab5cb;line-height:1.8}
-.contact a{
- display:inline-block;margin-top:12px;background:#dce5f5;
- color:#101729;text-decoration:none;padding:14px 25px;
- border-radius:13px;font-weight:900;
+.contact h2{font-size:35px}
+.contact p{font-size:13px;line-height:2;color:#a6b2c5}
+.line-btn{
+ display:inline-block;background:#06C755;color:#fff;
+ padding:16px 35px;margin-top:15px;font: bold 13px Arial;
+ letter-spacing:2px;
 }
-footer{text-align:center;color:#667590;font-size:11px;padding:30px 10px}
+footer{text-align:center;padding:35px;color:#697994;font:10px Arial;letter-spacing:3px}
 nav{
- position:fixed;bottom:0;left:0;right:0;z-index:20;
- background:rgba(5,8,16,.96);backdrop-filter:blur(15px);
- border-top:1px solid #28334a;
- display:flex;justify-content:space-around;padding:10px 5px 15px;
+ position:fixed;bottom:0;left:0;right:0;z-index:10;
+ display:flex;justify-content:space-around;
+ background:#090d18ed;backdrop-filter:blur(15px);
+ border-top:1px solid #ffffff1c;padding:14px 5px;
 }
-nav a{color:#8793ab;text-decoration:none;text-align:center;font-size:11px;flex:1}
-nav a span{display:block;font-size:22px;margin-bottom:3px}
-nav a:active{color:white}
-@media(max-width:420px){
- .brand-name{font-size:20px}
- .actions{gap:8px}
- .btn{font-size:13px}
- .stats{gap:8px}
- .stat{padding:13px}
- .stat strong{font-size:21px}
+nav a{font-size:11px;color:#aab6c9;letter-spacing:2px}
+@media(max-width:650px){
+ header{padding:17px 20px}
+ .hero{min-height:510px;padding:65px 0}
+ .hero h1{letter-spacing:6px}
+ .price-grid{grid-template-columns:1fr}
+ .card{padding:22px}
+ .boost{padding:23px;align-items:flex-start;flex-direction:column}
+ .wait-panel{padding:23px}
+ .section{padding:35px 0}
+ .section-top{display:block}
 }
 </style>
 </head>
 <body>
 
 <header>
- <div class="brand">
-  <div class="logo">川</div>
-  <div>
-   <div class="brand-name">川雲娛樂</div>
-   <div class="brand-en">CHUAN YUN</div>
-  </div>
+ <div class="logo">川雲娛樂
+  <small>CHUAN YUN ENTERTAINMENT</small>
  </div>
- <a href="#contact">聯絡客服</a>
+ <a class="header-link" href="#contact">CONTACT ↗</a>
 </header>
 
 <main>
- <div class="hero" id="home">
-  <div class="eyebrow">DELTA FORCE · GAME SERVICES</div>
-  <h1>三角洲代肝<br>遊戲幣・專業服務</h1>
-  <p>每日更新遊戲幣報價、代肝價格與等待人數。接受預訂，提供專業服務。</p>
-  <div class="actions">
-   <a class="btn primary" href="#services">查看服務方案</a>
-   <a class="btn secondary" href="#prices">今日價格</a>
-  </div>
+<section class="hero" id="home">
+ <div class="kicker">EASTERN ART · GAMING CULTURE</div>
+ <h1>川雲娛樂</h1>
+ <div class="english">CHUAN YUN · ART IN MOTION</div>
+ <p class="hero-desc">
+  以實力為本，以品質為名。<br>
+  遊戲幣販售・專業代肝・專屬服務。
+ </p>
+ <div class="hero-buttons">
+  <a class="btn light" href="#prices">EXPLORE SERVICES ↗</a>
+  <a class="btn" href="#contact">CONTACT US</a>
  </div>
+</section>
 
- <div class="stats">
-  <div class="stat"><strong>04</strong><span>服務分類</span></div>
-  <div class="stat"><strong>每日</strong><span>更新報價</span></div>
-  <div class="stat"><strong>即時</strong><span>等待資訊</span></div>
+<div class="art-line"></div>
+
+<section class="section" id="prices">
+ <div class="section-top">
+  <div>
+   <div class="label">01 / CURRENCY</div>
+   <h2>遊戲幣價格</h2>
+  </div>
+  <span class="status" id="preorder">● 接受預訂</span>
  </div>
+ <div class="price-grid" id="coin-list">
+  <div class="card"><div class="name">100M 單隻</div><div class="amount">NT$150</div><div class="unit">每 100M</div></div>
+  <div class="card featured"><div class="name">10 隻方案</div><div class="amount">NT$130</div><div class="unit">每隻 100M</div></div>
+  <div class="card"><div class="name">50 隻方案</div><div class="amount">NT$120</div><div class="unit">每隻 100M</div></div>
+ </div>
+</section>
 
- <section id="prices">
-  <div class="section-label">TODAY'S PRICE</div>
-  <h2>今日遊戲幣報價</h2>
-  <div class="price-card">
-   <div class="price-title">100M 單隻</div>
-   <div class="price-row">
-    <span class="unit">新台幣 TWD / 100M</span>
-    <span class="price">NT$150</span>
-   </div>
+<section class="section" id="services">
+ <div class="label">02 / BOOST SERVICE</div>
+ <h2>代肝服務</h2>
+ <div class="boost" id="boost-list">
+  <div>
+   <div class="label">PROFESSIONAL SERVICE</div>
+   <h3>純子彈手戳</h3>
+   <div class="note">每 100M 計價</div>
   </div>
-  <div class="price-card">
-   <div class="price-title">10 隻方案</div>
-   <div class="price-row">
-    <span class="unit">每隻 100M</span>
-    <span class="price">NT$130</span>
-   </div>
-  </div>
-  <div class="price-card">
-   <div class="price-title">50 隻方案</div>
-   <div class="price-row">
-    <span class="unit">每隻 100M</span>
-    <span class="price">NT$120</span>
-   </div>
-  </div>
-  <p><span class="tag">● 接受預訂</span></p>
- </section>
+  <div class="boost-price">NT$600</div>
+ </div>
+</section>
 
- <section id="services">
-  <div class="section-label">BOOST SERVICES</div>
-  <h2>代肝服務價格</h2>
-  <div class="price-card">
-   <div class="price-title">純子彈手戳</div>
-   <div class="price-row">
-    <span class="unit">每 100M · 新台幣</span>
-    <span class="price">NT$600</span>
-   </div>
+<section class="section" id="waiting">
+ <div class="label">03 / LIVE QUEUE</div>
+ <h2>目前等待狀態</h2>
+ <div class="wait-panel">
+  <div>
+   <div class="label">CURRENT WAITING</div>
+   <div class="wait-number" id="waiting-count">0</div>
+   <div class="wait-caption">位顧客等待中</div>
   </div>
-  <p class="service-note">服務內容及安排請聯絡官方客服確認。</p>
- </section>
+  <span class="status">QUEUE STATUS</span>
+ </div>
+</section>
 
- <section id="waiting">
-  <div class="section-label">CURRENT QUEUE</div>
-  <h2>代肝等待狀態</h2>
-  <div class="waiting">
-   <div>
-    <strong>0 人</strong><br>
-    <small>目前等待中人數</small>
-   </div>
-   <span class="tag">等待資訊</span>
-  </div>
-  <p class="service-note">目前顯示 0 人為初始預設值，實際人數以客服確認為準。</p>
- </section>
-
- <section id="contact">
-  <div class="contact">
-   <div class="section-label">CONTACT US</div>
-   <h2>聯絡川雲娛樂</h2>
-   <p>有任何價格、預訂或服務問題，歡迎透過官方 LINE 聯絡我們。</p>
-   <a href="#contact">官方 LINE 連結待設定</a>
-  </div>
- </section>
+<section class="section" id="contact">
+ <div class="contact">
+  <div class="label">04 / CONNECT WITH US</div>
+  <h2>與川雲相遇</h2>
+  <p>價格諮詢、服務預訂及其他問題，<br>歡迎透過官方 LINE 與我們聯絡。</p>
+  <a class="line-btn" id="line-button"
+     href="https://line.me/R/ti/p/@348iqzie"
+     target="_blank" rel="noopener noreferrer">
+     LINE OFFICIAL ↗
+  </a>
+ </div>
+</section>
 </main>
 
 <footer>© CHUAN YUN ENTERTAINMENT · 川雲娛樂</footer>
 
 <nav>
- <a href="#home"><span>⌂</span>首頁</a>
- <a href="#services"><span>⚡</span>服務</a>
- <a href="#prices"><span>＄</span>價格</a>
- <a href="#waiting"><span>▣</span>等待</a>
- <a href="#contact"><span>⌕</span>聯絡</a>
+ <a href="#home">首頁</a>
+ <a href="#prices">幣號</a>
+ <a href="#services">代肝</a>
+ <a href="#waiting">等待</a>
+ <a href="#contact">聯絡</a>
 </nav>
 
-</body>
 <script src="data.js"></script>
 <script>
-const d = window.SITE_DATA;
+(function(){
+ const d=window.SITE_DATA;
+ if(!d)return;
 
-if (d) {
-  // 更新遊戲幣價格
-  const cards = document.querySelectorAll(
-    "#prices .price-card"
-  );
+ const money=n=>"NT$"+Number(n).toLocaleString("zh-TW");
 
-  d.coinPrices.forEach((item, i) => {
-    if (cards[i]) {
-      cards[i].querySelector(".price-title").textContent = item.name;
-      cards[i].querySelector(".price").textContent =
-        "NT$" + item.price;
-    }
-  });
+ if(Array.isArray(d.coinPrices)){
+  document.getElementById("coin-list").innerHTML=
+  d.coinPrices.map((p,i)=>`
+   <div class="card ${i===1?"featured":""}">
+    <div class="name">${p.name}</div>
+    <div class="amount">${money(p.price)}</div>
+    <div class="unit">${i===0?"每 100M":"每隻 100M"}</div>
+   </div>`).join("");
+ }
 
-  // 更新代肝價格
-  const boost = document.querySelector(
-    "#services .price-card"
-  );
+ if(Array.isArray(d.boostServices)){
+  document.getElementById("boost-list").innerHTML=
+  d.boostServices.map(p=>`
+   <div>
+    <div class="label">PROFESSIONAL SERVICE</div>
+    <h3>${p.name}</h3>
+    <div class="note">每 ${p.unit} 計價</div>
+   </div>
+   <div class="boost-price">${money(p.price)}</div>
+  `).join("");
+ }
 
-  if (boost && d.boostServices[0]) {
-    boost.querySelector(".price-title").textContent =
-      d.boostServices[0].name;
+ document.getElementById("waiting-count").textContent=
+  Number(d.waitingCount)||0;
 
-    boost.querySelector(".price").textContent =
-      "NT$" + d.boostServices[0].price;
-  }
+ const preorder=document.getElementById("preorder");
+ preorder.textContent=d.preorder?"● 接受預訂":"● 暫停預訂";
+ preorder.style.color=d.preorder?"#9bd8b9":"#f0a5a5";
 
-  // 更新等待人數
-  const waiting = document.querySelector(
-    "#waiting .waiting strong"
-  );
-
-  if (waiting) {
-    waiting.textContent = d.waitingCount + " 人";
-  }
-  
-  // 更新官方 LINE
-  const lineButton = document.querySelector(
-    "#contact .contact a"
-  );
-
-  if (lineButton && d.lineUrl) {
-    lineButton.href = d.lineUrl;
-    lineButton.textContent = "加入官方 LINE 客服";
-    lineButton.target = "_blank";
-    lineButton.rel = "noopener noreferrer";
-  }
-
-}
+ if(d.lineUrl){
+  document.getElementById("line-button").href=d.lineUrl;
+ }
+})();
 </script>
 </body>
-</html>
-
 </html>
