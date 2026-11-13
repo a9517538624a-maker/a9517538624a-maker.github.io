@@ -251,6 +251,19 @@ if (d) {
   if (waiting) {
     waiting.textContent = d.waitingCount + " 人";
   }
+  
+  // 更新官方 LINE
+  const lineButton = document.querySelector(
+    "#contact .contact a"
+  );
+
+  if (lineButton && d.lineUrl) {
+    lineButton.href = d.lineUrl;
+    lineButton.textContent = "加入官方 LINE 客服";
+    lineButton.target = "_blank";
+    lineButton.rel = "noopener noreferrer";
+  }
+
 }
 </script>
 </body>
